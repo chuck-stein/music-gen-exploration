@@ -1,9 +1,10 @@
 import argparse
-
-from audiocraft.models import MusicGen
-from audiocraft.data.audio import audio_write
-from datetime import datetime
+import platform
 from dataclasses import dataclass
+from datetime import datetime
+
+from audiocraft.data.audio import audio_write
+from audiocraft.models import MusicGen
 
 
 @dataclass
@@ -17,6 +18,7 @@ available_models: dict[str, MusicGen] = {}
 
 
 def generate_music(prompt: Prompt):
+    # this logic is for supporting multiple prompts sequentially in the same process
     if prompt.model in available_models:
         print(f'retrieving existing {prompt.model} model instance')
         model = available_models[prompt.model]
@@ -32,7 +34,11 @@ def generate_music(prompt: Prompt):
     generated_music = model.generate([prompt.description], progress=True)[0]
     end_time = datetime.now()
     generation_time = end_time - start_time
-    print(f'~~~~ generated {prompt.duration} seconds of music in {generation_time} using model {prompt.model} ~~~~')
+    generation_summary = (f'~~~~ generated {prompt.duration} seconds of music in {generation_time} '
+                          f'using model {prompt.model} on machine {platform.node()} ~~~~')
+    print(generation_summary)
+    with open('generation-times.txt', 'a') as f:
+        f.write(f'{generation_summary}\n')
 
     filename = f'generated/[{datetime.now()}] {prompt.description}'
     print(f'writing audio to {filename}.wav')

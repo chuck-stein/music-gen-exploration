@@ -1,0 +1,10 @@
+~~~~ generated 2 seconds of music in 0:00:20.718038 using model facebook/musicgen-small on machine Chucks-MacBook-Pro.local ~~~~
+~~~~ generated 8 seconds of music in 0:01:15.860484 using model facebook/musicgen-small on machine Chucks-MacBook-Pro.local ~~~~
+~~~~ generated 20 seconds of music in 1:14:57.136167 using model facebook/musicgen-medium on machine Chucks-MacBook-Pro.local ~~~~
+~~~~ generated 10 seconds of music in 0:02:18.732578 using model facebook/musicgen-small on machine Chucks-MacBook-Pro.local ~~~~
+~~~~ generated 10 seconds of music in 0:03:35.339596 using model facebook/musicgen-small on machine Chucks-MacBook-Pro.local ~~~~
+~~~~ generated 10 seconds of music in 0:03:29.045001 using model facebook/musicgen-small on machine Chucks-MacBook-Pro.local ~~~~
+~~~~ generated 10 seconds of music in 0:02:12.110782 using model facebook/musicgen-small on machine Chucks-MacBook-Pro.local ~~~~
+~~~~ generated 10 seconds of music in 0:02:19.472719 using model facebook/musicgen-small on machine Chucks-MacBook-Pro.local ~~~~
+~~~~ generated 1 seconds of music in 0:00:12.614691 using model facebook/musicgen-small on machine Chucks-MacBook-Pro.local ~~~~
+~~~~ generated 1 seconds of music in 0:00:23.400036 using model facebook/musicgen-small on machine Chucks-MacBook-Pro.local ~~~~
